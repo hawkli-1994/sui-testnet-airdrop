@@ -1,0 +1,14 @@
+name: Airdop sui for test
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  airdrop-some-sol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Airdrop SUI to  🔧
+        run: |
+          curl -d '{"FixedAmountRequest":{"recipient":"0x71994e6011232f3be34c4b52b81bd065f35531914a63bef95f6f388ab803d9ac"}}' -H 'Content-Type: application/json' https://faucet.testnet.sui.io/v1/gas
