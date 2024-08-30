@@ -2,7 +2,7 @@ name: Airdop sui for test
 
 on:
   schedule:
-    - cron: "*/8 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
