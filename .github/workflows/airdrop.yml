@@ -9,6 +9,9 @@ jobs:
   airdrop-some-sui:
     runs-on: ubuntu-latest
     steps:
-      - name: Airdrop SUI to  🔧
+      - name: Airdrop SUI to testnet 🔧
         run: |
           curl -d '{"FixedAmountRequest":{"recipient":"0xfbe99c31d90be3aedaec6f25f837eeb32665a19416c51856a2feab6dce50da99"}}' -H 'Content-Type: application/json' https://faucet.testnet.sui.io/v1/gas
+      - name: Airdrop SUI to devnet 🔧
+        run: |
+          curl -d '{"FixedAmountRequest":{"recipient":"0xfbe99c31d90be3aedaec6f25f837eeb32665a19416c51856a2feab6dce50da99"}}' -H 'Content-Type: application/json' https://faucet.devnet.sui.io/v1/gas
