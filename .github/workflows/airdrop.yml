@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Airdrop SUI to  🔧
         run: |
-          curl -d '{"FixedAmountRequest":{"recipient":"0x0bd031da8a2bf03680d3e1919de107903879f14e8f447d4f1891c7ead8b678b2"}}' -H 'Content-Type: application/json' https://faucet.testnet.sui.io/v1/gas
+          curl -d '{"FixedAmountRequest":{"recipient":"0xfbe99c31d90be3aedaec6f25f837eeb32665a19416c51856a2feab6dce50da99"}}' -H 'Content-Type: application/json' https://faucet.testnet.sui.io/v1/gas
