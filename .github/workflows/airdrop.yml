@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  airdrop-some-sol:
+  airdrop-some-sui:
     runs-on: ubuntu-latest
     steps:
       - name: Airdrop SUI to  🔧
